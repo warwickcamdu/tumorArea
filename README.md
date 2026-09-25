@@ -1,5 +1,5 @@
 # tumorArea
-Version: v0.2 \
+Version: v0.3 \
 Author: Laura Cooper, camdu@warwick.ac.uk \
 If you use this software or find is useful, please acknowledge CAMDU in line with our [ackownledgement policy](https://warwick.ac.uk/fac/sci/med/research/biomedical/facilities/camdu/acknowledgementpolicy/)
 
@@ -57,8 +57,9 @@ The macro creates a `Results` directory inside the input directory. For each pro
 | Result | Filename | Description |
 |---|---|---|
 | Processed TIFF | `B3_02_1_<i>_Processed.tif` | This is the processed image after the extended depth-of-focus projection. |
-| Results CSV | `B3_02_1_<i>_Results.csv` | This contains the measurements in area and centriods |
-| ROI set | `B3_02_1_<i>_RoiSet.zip` | This contains the ROIs returned by Cellpose and saved through the ROI Manager.
+| Results CSV | `B3_02_1_<i>_Results.csv` | This contains the measurements generated from the Cellpose ROIs including area and shape descriptors |
+| ROI set | `B3_02_1_<i>_RoiSet.zip` | This contains the ROIs returned by Cellpose and saved through the ROI Manager. |
+| Parameters | Parameters.txt | The paramters used to create the result | 
 
 ### Output directory example
 
