@@ -1,5 +1,5 @@
 # tumorArea
-Version: v0.4 \
+Version: v0.5 \
 Author: Laura Cooper, camdu@warwick.ac.uk \
 If you use this software or find is useful, please acknowledge CAMDU in line with our [ackownledgement policy](https://warwick.ac.uk/fac/sci/med/research/biomedical/facilities/camdu/acknowledgementpolicy/)
 
@@ -93,7 +93,7 @@ This will open the image, rois and results table.
 | Fiji | ImageJ 1.54p |
 | Java | 21.0.7 |
 | Operating system | Ubuntu 24.04 |
-| Cellpose | Cellpose_Appose-0.1.18.jar |
+| Cellpose | Cellpose_Appose-0.1.22.jar |
 | CLIJ | clij_-1.9.0.1.jar |
 | CLIJ2 | clij2_-2.5.3.5.jar |
 

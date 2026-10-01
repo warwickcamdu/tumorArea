@@ -16,7 +16,6 @@ File.makeDirectory(input+File.separator+"Results");
 
 run("CLIJ2 Macro Extensions", "cl_device=");
 run("ROI Manager...");
-//setBatchMode("hide");
 for (j = 1; j <= 25; j++) {
 	if(File.exists(input+File.separator+filter+j+"Z0_Bright Field_001.tif")){
 	File.openSequence(input, " filter="+filter+j+"Z");
@@ -29,7 +28,7 @@ for (j = 1; j <= 25; j++) {
 	Ext.CLIJ2_pull(image2);
 	saveAs("Tiff", input+File.separator+"Results"+File.separator+filter+j+"_Processed.tif");
 	// Cellpose find tumors
-	run("Cellpose...", "cp_model=yeast_BF_cp3 custom_model= cell_diameter="+cellDiam+" cyto_channel=1 nuclei_channel=None min_size=0 normalize=true resample=true return_rois=true cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=true mode_3d=None stitch_threshold=0.0 flow3d_smooth=0 torchversion=cpu usegpu=false");
+	run("Cellpose...", "cp_model=yeast_BF_cp3 custom_model= cell_diameter="+cellDiam+" cyto_channel=1 nuclei_channel=None min_size=0 normalize=true resample=true return_rois=true cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=true labeltype=16-bit mode_3d=None stitch_threshold=0.0 flow3d_smooth=0 torchversion=cpu usegpu=false");
 	// Scale to um and measure
 	run("Set Scale...", "distance=1 known="+scale+" unit=um");
 	run("Set Measurements...", "area centroid fit shape redirect=None decimal=9");
@@ -58,7 +57,6 @@ for (j = 1; j <= 25; j++) {
 	setBatchMode("show");
 	saveAs("Results", input+File.separator+"Results"+File.separator+filter+j+"_Results.csv");
 	roiManager("Save", input+File.separator+"Results"+File.separator+filter+j+"_RoiSet.zip");
-	//setBatchMode("show");
 	//Clear everything before opening next image sequence
 	selectWindow("Results");
 	run("Close");
