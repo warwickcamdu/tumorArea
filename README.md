@@ -92,7 +92,7 @@ This will open the image, rois and results table.
 |---|---|
 | Fiji | ImageJ 1.54p |
 | Java | 21.0.7 |
-| Operating system | Ubuntu 24.04 |
+| Operating system | Windows 11 |
 | Cellpose | Cellpose_Appose-0.1.22.jar |
 | CLIJ | clij_-1.9.0.1.jar |
 | CLIJ2 | clij2_-2.5.3.5.jar |
@@ -104,7 +104,7 @@ Daniela Vorkel, Robert Haase. GPU-accelerating ImageJ Macro image processing wor
 
 Robert Haase, Akanksha Jain, Stéphane Rigaud, Daniela Vorkel, Pradeep Rajasekhar, Theresa Suckert, Talley J. Lambert, Juan Nunez-Iglesias, Daniel P. Poole, Pavel Tomancak, Eugene W. Myers. Interactive design of GPU-accelerated Image Data Flow Graphs and cross-platform deployment using multi-lingual code generation. bioRxiv preprint
 
-Stringer, C., Pachitariu, M. Cellpose3: one-click image restoration for improved cellular segmentation. Nat Methods 22, 592–599 (2025). https://doi.org/10.1038/s41592-025-02595-5
+Pachitariu, M., Rariden, M., & Stringer, C. (2025). Cellpose-SAM: superhuman generalization for cellular segmentation. bioRxiv.
 
 Schindelin, J., Arganda-Carreras, I., Frise, E., Kaynig, V., Longair, M., Pietzsch, T., … Cardona, A. (2012). Fiji: an open-source platform for biological-image analysis. Nature Methods, 9(7), 676–682. doi:10.1038/nmeth.2019
 
