@@ -28,7 +28,7 @@ for (j = 1; j <= 25; j++) {
 	Ext.CLIJ2_pull(image2);
 	saveAs("Tiff", input+File.separator+"Results"+File.separator+filter+j+"_Processed.tif");
 	// Cellpose find tumors
-	run("Cellpose...", "cp_model=yeast_BF_cp3 custom_model= cell_diameter="+cellDiam+" cyto_channel=1 nuclei_channel=None min_size=0 normalize=true resample=true return_rois=true cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=true labeltype=16-bit mode_3d=None stitch_threshold=0.0 flow3d_smooth=0 torchversion=cpu usegpu=false");
+	run("Cellpose-SAM...", "cp_model=cpsam_v2 custom_model= cell_diameter="+cellDiam+" chan0=1 chan1=None chan2=None min_size=0 normalize=true resample=true return_rois=true cellprob_threshold=0.0 flow_threshold=0.4 tile_overlap=0.1 niter=0 compute_flows=false shuffle=true labeltype=16-bit mode_3d=None stitch_threshold=0.0 flow3d_smooth=0 torchversion=cu126 usegpu=true");
 	// Scale to um and measure
 	run("Set Scale...", "distance=1 known="+scale+" unit=um");
 	run("Set Measurements...", "area centroid fit shape redirect=None decimal=9");
