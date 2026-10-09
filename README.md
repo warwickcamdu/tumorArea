@@ -1,5 +1,5 @@
 # tumorArea
-Version: v0.5 \
+Version: v0.6 \
 Author: Laura Cooper, camdu@warwick.ac.uk \
 If you use this software or find is useful, please acknowledge CAMDU in line with our [ackownledgement policy](https://warwick.ac.uk/fac/sci/med/research/biomedical/facilities/camdu/acknowledgementpolicy/)
 
